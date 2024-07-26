@@ -1,0 +1,131 @@
+Ejercicio: Desarrollo de un Sistema de Administración y Cobro de Colegiatura para una 
+Escuela
+Descripción del Proyecto:
+El objetivo de este proyecto es desarrollar una página web responsiva para una escuela 
+que necesita un sistema para la administración y el cobro de colegiatura. El sistema debe 
+incluir los siguientes módulos:
+1. Registro de Estudiantes
+2. Alta de Concepto de Pagos
+3. Generación de Recibos de Pago
+4. Histórico de Pago por Alumno
+5. Pantalla de Método de Pago
+6. Reportes de Pagos Pendientes y Retrasados
+7. Pantalla de Login y Registro de Usuarios
+Cada módulo debe incluir formularios específicos y funcionalidades de validación y 
+manipulación del DOM. A continuación, se detallan los requisitos de cada módulo.
+Pantalla de Login y Registro de Usuarios
+Formulario de Login:
+• Campos:
+o Correo Electrónico
+o Contraseña
+• Validación:
+o Todos los campos son obligatorios.
+o El campo de correo electrónico debe contener una dirección de correo válida.
+• Funcionalidad del DOM:
+o Mostrar un mensaje de error si las credenciales son incorrectas.
+o Redirigir al usuario a la página principal al iniciar sesión correctamente.
+
+Formulario de Registro de Usuarios:
+• Campos:
+o Nombre Completo
+o Correo Electrónico
+o Contraseña
+o Confirmar Contraseña
+• Validación:
+o Todos los campos son obligatorios.
+o El campo de correo electrónico debe contener una dirección de correo válida.
+o Las contraseñas deben coincidir.
+• Funcionalidad del DOM:
+o Mostrar un mensaje de confirmación al registrar un usuario correctamente.
+o Limpiar el formulario después de enviar los datos.
+
+Módulo 1: Registro de Estudiantes
+Formulario de Registro de Estudiantes:
+• Campos:
+o Nombre Completo
+o Fecha de Nacimiento
+o Dirección
+o Teléfono
+o Correo Electrónico
+o Grado
+o Sección
+• Validación:
+o Todos los campos son obligatorios.
+o El campo de correo electrónico debe contener una dirección de correo válida.
+o El campo de teléfono debe contener solo números y tener 10 dígitos.
+• Funcionalidad del DOM:
+o Mostrar un mensaje de confirmación al registrar un estudiante correctamente.
+o Limpiar el formulario después de enviar los datos.
+
+Módulo 2: Alta de Concepto de Pagos
+Formulario de Alta de Concepto de Pagos:
+• Campos:
+o Nombre del Concepto
+o Monto
+o Fecha de Vencimiento
+• Validación:
+o Todos los campos son obligatorios.
+o El campo de monto debe ser un número positivo.
+• Funcionalidad del DOM:
+o Mostrar una lista actualizada de los conceptos de pago registrados.
+o Permitir la eliminación y edición de conceptos de pago.
+
+Módulo 3: Generación de Recibos de Pago
+Formulario de Generación de Recibos de Pago:
+• Campos:
+o Seleccionar Estudiante (Lista desplegable)
+o Seleccionar Concepto de Pago (Lista desplegable)
+o Monto a Pagar (Autocompletado)
+• Validación:
+o Todos los campos son obligatorios.
+• Funcionalidad del DOM:
+o Mostrar una vista previa del recibo antes de confirmar.
+o Generar un recibo imprimible al confirmar el pago.
+
+Módulo 4: Histórico de Pago por Alumno
+Interfaz del Histórico de Pago:
+• Campos:
+o Seleccionar Estudiante (Lista desplegable)
+• Funcionalidad del DOM:
+o Mostrar un historial de todos los pagos realizados por el estudiante 
+seleccionado.
+o Permitir la búsqueda y filtrado de pagos por fecha y concepto.
+
+Módulo 5: Pantalla de Método de Pago
+Formulario de Método de Pago:
+• Campos:
+o Seleccionar Método de Pago (Tarjeta de Crédito, Débito, Transferencia 
+Bancaria)
+o Detalles del Método de Pago (Número de Tarjeta, Fecha de Vencimiento, etc.)
+• Validación:
+o Todos los campos son obligatorios para el método de pago seleccionado.
+o Validar número de tarjeta de crédito/débito.
+• Funcionalidad del DOM:
+o Mostrar un mensaje de confirmación al realizar el pago correctamente.
+o Limpiar el formulario después de enviar los datos.
+
+Módulo 6: Reportes de Pagos Pendientes y Retrasados
+Interfaz de Reportes:
+• Campos:
+o Seleccionar Tipo de Reporte (Pendientes, Retrasados)
+o Fecha de Corte
+• Funcionalidad del DOM:
+o Generar y mostrar una tabla de pagos pendientes o retrasados basada en los 
+criterios seleccionados.
+o Utilizar Canvas JS para generar gráficos visuales de los reportes.
+o Permitir la exportación del reporte en formato PDF o Excel.
+Descripción de los Reportes:
+Reportes de Pagos Pendientes:
+• Este reporte muestra una lista de todos los pagos que aún no se han realizado y 
+cuya fecha de vencimiento está próxima.
+• Los pagos se pueden filtrar por fecha de vencimiento y por estudiante.
+• Incluye detalles como el nombre del estudiante, el concepto de pago, el monto y la 
+fecha de vencimiento.
+Reportes de Pagos Retrasados:
+• Este reporte muestra una lista de todos los pagos que no se han realizado y cuya 
+fecha de vencimiento ya ha pasado.
+• Los pagos se pueden filtrar por fecha de vencimiento y por estudiante.
+• Incluye detalles como el nombre del estudiante, el concepto de pago, el monto, la 
+fecha de vencimiento y el tiempo de retraso.
+• Utilizar gráficos de Canvas JS para mostrar la cantidad de pagos retrasados por mes 
+o por grado
