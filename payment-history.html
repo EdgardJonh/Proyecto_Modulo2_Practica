@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Histórico de Pago por Alumno</title>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <h2>Histórico de Pago por Alumno</h2>
+        <form id="historyForm">
+            <div class="form-group">
+                <label for="studentSelect">Seleccionar Estudiante</label>
+                <select class="form-control" id="studentSelect">
+                    <option value="">Selecciona un estudiante</option>
+                    <option value="1">Juan Pérez</option>
+                    <option value="2">María López</option>
+                    <option value="3">Carlos Sánchez</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Mostrar Pagos Históricos</button>
+        </form>
+        <div id="paymentHistory" class="mt-4"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="assets/js/payment-history.js"></script>
+</body>
+</html>
