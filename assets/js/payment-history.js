@@ -41,21 +41,6 @@ $(document).ready(function() {
                 <tbody>
         `;
 
-        payments.forEach(payment => {
-            historyTable += `
-                <tr>
-                    <td>${payment.concepto}</td>
-                    <td>${payment.monto}</td>
-                    <td>${payment.fecha}</td>
-                </tr>
-            `;
-        });
-
-        historyTable += `
-                </tbody>
-            </table>
-        `;
-
-        $('#paymentHistory').html(historyTable);
+ 
     });
 });
