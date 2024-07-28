@@ -114,6 +114,7 @@ o Generar y mostrar una tabla de pagos pendientes o retrasados basada en los
 criterios seleccionados.
 o Utilizar Canvas JS para generar gráficos visuales de los reportes.
 o Permitir la exportación del reporte en formato PDF o Excel.
+
 Descripción de los Reportes:
 Reportes de Pagos Pendientes:
 • Este reporte muestra una lista de todos los pagos que aún no se han realizado y 
@@ -121,6 +122,7 @@ cuya fecha de vencimiento está próxima.
 • Los pagos se pueden filtrar por fecha de vencimiento y por estudiante.
 • Incluye detalles como el nombre del estudiante, el concepto de pago, el monto y la 
 fecha de vencimiento.
+
 Reportes de Pagos Retrasados:
 • Este reporte muestra una lista de todos los pagos que no se han realizado y cuya 
 fecha de vencimiento ya ha pasado.
