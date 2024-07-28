@@ -28,7 +28,10 @@ document.addEventListener('click',function(e){
                         </form>`
     }
     if(e.target.value == 'debito'){
-        padreForm.innerHTML= `hola`
+        padreForm.innerHTML= `seccion debito`
+    }
+    if(e.target.value == 'tranfer'){
+        padreForm.innerHTML= `seccion tranferencia`
     }
 })
 console.log(credi)
