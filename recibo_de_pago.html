@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recibos de Pago</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <LInk rel="stylesheet" href="assets/css/reciboPago.css"></LInk>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Se agrega aquí el formulario de generación de recibos de pago -->
+        <div id="" class="form-container mt-5">
+            <h2 class="mb-4">Recibo de Pago</h2>
+            <form id="generaRecibo">
+                <div class="form-group">
+                    <label for="">Seleccionar Estudiante:</label>
+                    <select id="seleccionarEstudiante" class="form-control" required>
+        <!-- Genera las opciones de estudiantes -->
+                        <option value="">Seleccione un estudiante</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Seleccionar Concepto de Pago:</label>
+                    <select id="seleccionarConceptoPago" class="form-control" required>
+        <!-- Genera las opciones de conceptos de pago -->
+                        <option value="">Seleccione un concepto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Monto a Pagar:</label>
+                    <input type="number" id="montoPago" class="form-control" readonly required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generar Recibo</button>
+            </form>
+            <div id="vistaRecibo" class="vista-recibo mt-4 p-3 border" style="display:none;"></div>
+            <button id="imprimeRecibo" class="btn btn-secondary mt-2" style="display:none;">Imprimir Recibo</button>
+        </div>
+    </div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/reciboPago.js"></script>
 </body>
+    
 </html>
