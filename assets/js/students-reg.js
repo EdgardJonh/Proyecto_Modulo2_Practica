@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     function validateForm(fullName, birthDate, address, phone, email, grade, section) {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const phonePattern = /^\d{9}$/;
+        const phonePattern = /^\d{10}$/;
 
         if (!fullName || !birthDate || !address || !phone || !email || !grade || !section) {
             return false;
